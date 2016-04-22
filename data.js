@@ -34,7 +34,6 @@ var ticTacToeEngine = (function() {
   
   function setHumanMove(cell) {
       makeMove(humanHand, cell);
-      console.log(board);
   }
   
   function getStatus() {
