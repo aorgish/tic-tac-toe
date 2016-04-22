@@ -24,7 +24,7 @@ var ticTacToeEngine = (function() {
   }
   
   function getBotMove() {
-      var idx = getIndexOfBoard(board);
+      var idx = getIndexOfBoard();
       var result = b.charCodeAt(idx);
       var cell = result >> 2;
       status = result & 3;
