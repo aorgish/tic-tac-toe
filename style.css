@@ -130,5 +130,11 @@ main {
   font-size: 5em;
   padding-top: 0.4em;
   color: white;
-  transition: all 10s easeInOutBack 10s;
+}
+
+.github-banner {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0;
 }
