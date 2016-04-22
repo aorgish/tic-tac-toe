@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #777;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #e4e4e4;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 30px 0;
+  width: 400px;
+  height: 100px;
+  justify-content: space-around;  
+}
+
+.button-container button {
+  font-size: large;
+  padding: 7px 7px 7px 20px;
+  color: #e4e4e4;
+  background: #777;
+  border: 1px solid #e4e4e4;
+  text-align: left;
+  cursor: pointer;
+}
+
+.button-container button span {
+  font-size: x-large;
+  padding: 7px 15px;
+  color: #e4e4e4;
+}
+
+.button-container button:hover span {
+  color: #FFF;
+}
+
+.button-container button:hover, .button-container button.active {
+  color: #eee;
+  background: #666;
+}
+
+.button-container button.inactive {
+  color: #999;
+  background: #777;
+  border: 1px solid #999;
+}
+
+.button-container button.inactive span {
+  color: #999;
+}
+
+#ticTacToe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row-wrap;
+  justify-content: space-between;
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+#ticTacToe.human-first, #ticTacToe.human-second {
+  border: 1px solid #e4e4e4;
+}
+
+#ticTacToe span {
+  display: block;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #999;
+  color: #777;
+  font-size: 5em;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px;
+  transition: color 2s, background-color 1s, border-color 1s;
+}
+
+#ticTacToe.human-first span, #ticTacToe.human-second span {
+  border: 1px solid #e4e4e4;
+}
+
+#ticTacToe.human-first span.player-o, #ticTacToe.human-second span.player-x {
+  transition: color 10s easeInOutBack 10s;
+}
+
+.player-x::before {
+  content: "X";
+  color: #e4e4e4;
+}
+
+.player-o::before {
+  content: "O";
+  color: #e4e4e4;
+}
+
+.human-first .empty:hover, .human-second .empty:hover {
+  content: "X";
+  color: #666;
+  cursor: pointer;
+  background: #888;
+}
+
+.human-first .empty:hover::before {
+  content: "X";
+}
+
+.human-second .empty:hover::before {
+  content: "O";
+}
+
+.result-text {
+  font-size: 5em;
+  padding-top: 0.4em;
+  color: white;
+  transition: all 10s easeInOutBack 10s;
+}
