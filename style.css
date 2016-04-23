@@ -24,8 +24,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: 10px 0 30px 0;
-  width: 400px;
-  height: 100px;
+  width: 20em;
+  height: 6em;
   justify-content: space-around;  
 }
 
@@ -70,9 +70,9 @@ main {
   flex-wrap: wrap;
   flex-flow: row-wrap;
   justify-content: space-between;
-  width: 400px;
-  height: 400px;
-  padding: 5px;
+  width: 20em;
+  height: 20em;  
+  padding: 0.1em;
   border: 1px solid #999;
 }
 
@@ -82,14 +82,14 @@ main {
 
 #ticTacToe span {
   display: block;
-  width: 125px;
-  height: 125px;
+  width: 1.3em;
+  height: 1.3em;
   border: 1px solid #999;
   color: #777;
   font-size: 5em;
   font-weight: 100;
   text-align: center;
-  padding: 20px;
+  padding: 0.1em;
   transition: color 2s, background-color 1s, border-color 1s;
 }
 
